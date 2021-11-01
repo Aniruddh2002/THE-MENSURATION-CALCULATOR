@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE MENSURATION CALCULATOR </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+
+
+<!header>
+
+
+<header class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <img src="3D-Geometry-Mensuration-Cube-Cuboid.jpg" alt="logo" style="width:100px;height:100px;" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24" />
+        
+      </svg>
+      <span class="ml-3 text-xl"><span class="ml-3 text-xl"><i><p style="font-family:Algerian;font-size:140%;"><class style="color:aquamarine;">THE<br> MENSURATION <br> CALCULATOR </i></p></span></a></class>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-white-600">     <span class="ml-3 text-xl"><b><i><p style="font-family:Monotype Corsiva;font-size:160%;color:gold;">Rectangle </i></b></p></span></a>
+
+    </nav>
+
+      </svg>
+    </button>
+  </div>
+</header>
+
+
+
+<!hero>
+
+
+<section class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://vt-vtwa-assets.varsitytutors.com/vt-vtwa/uploads/problem_question_image/image/13961/1.png">
+      <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" ><p style="font-family:MV Boli;font-size:100%;">DIAGONAL OF RECTANGLE</h1></p>
+        <p class="mb-8 leading-relaxed">Enter the following Data :-  </p>
+        <div class="flex w-full justify-center items-end">
+          <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+            <label for="hero-field" class="leading-7 text-sm text-gray-600">Length (l)</label>
+            <input type="text" id="l" name="hero-field" class="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+            <label for="hero-field" class="leading-7 text-sm text-gray-600">Width (w)</label>
+            <input type="text" id="b" name="hero-field" class="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <p id="result"></p><br>
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"id="btn" onClick="dia()">Calculate</button>
+        </div><br>
+        <script type="text/javascript">
+            function dia() {
+                var l=document.getElementById('l').value;
+                var b=document.getElementById('b').value;
+                
+                var a= l*l;
+                var b = b*b;
+                var c = Math.max(a,b)+Math.min(a,b)
+                var d = Math.sqrt(c)
+                var dia=(d.toFixed(2));
+  
+                document.getElementById("result").innerHTML="The Diagonal of Rectangle :-  " + dia;
+            }
+        </script> 
+        <div class="flex">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+<!footer>
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="3D-Geometry-Mensuration-Cube-Cuboid.jpg" alt="logo" style="width:100px;height:100px;"stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24"  />
+        <span class="ml-3 text-xl"><b><i><p style="font-family:algerian;font-size:140%;"><class style="color:aquamarine;">THE <br> MESURATION<BR> CALCULATOR</i></b></p>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">@ Aniruddh chaturvedi
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank"></a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  </body>
+</html>
